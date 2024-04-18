@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 18 12:00:18 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>107 seconds (107619 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CommercialRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: CommercialRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is displayed the seth zuri properties", "To test the functionalities of NoBroker website"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.the_user_is_taken_to_the_property_listed_pages(CommercialStepDefination.java:352)
+	at ✽.the user is taken to the property listed pages(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1470523336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470523336'><pre>java.lang.AssertionError: expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.the_user_is_taken_to_the_property_listed_pages(CommercialStepDefination.java:352)
+	at ✽.the user is taken to the property listed pages(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:51)
+</pre></div></td>
+<td>14</td>
+<td>CommercialRunner.Runner@17bffc17</td></tr>
+<tr>
+<td title='CommercialRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: CommercialRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user enters the personal information in the form displayed", "To test the functionalities of NoBroker website"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-builder-projects/capital-gain/&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.click_the_submit_button(CommercialStepDefination.java:313)
+	at ✽.click the submit button(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1537324590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537324590'><pre>java.lang.AssertionError: expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-builder-projects/capital-gain/&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.click_the_submit_button(CommercialStepDefination.java:313)
+	at ✽.click the submit button(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:45)
+</pre></div></td>
+<td>11</td>
+<td>CommercialRunner.Runner@17bffc17</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CommercialRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: CommercialRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to validate if the user is able to register for nri carnival", "To test the functionalities of NoBroker website"</td>
+<td></td>
+<td>17</td>
+<td>CommercialRunner.Runner@17bffc17</td></tr>
+<tr>
+<td title='CommercialRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: CommercialRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to validate if user is taken to the property listings after providing the valid informations", "To test the functionalities of NoBroker website"</td>
+<td></td>
+<td>38</td>
+<td>CommercialRunner.Runner@17bffc17</td></tr>
+<tr>
+<td title='CommercialRunner.Runner.runScenario()'><b>runScenario</b><br>Test class: CommercialRunner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user can enter the details in the capital gain form", "To test the functionalities of NoBroker website"</td>
+<td></td>
+<td>22</td>
+<td>CommercialRunner.Runner@17bffc17</td></tr>
+</table><p>
+</body>
+</html>

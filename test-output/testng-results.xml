@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-18T12:00:18 IST" name="Default suite" finished-at="2024-04-18T12:02:05 IST" duration-ms="107619">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-04-18T12:00:18 IST" name="Default test" finished-at="2024-04-18T12:02:05 IST" duration-ms="107619">
+      <class name="CommercialRunner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:00:18 IST" name="setUpClass" finished-at="2024-04-18T12:00:19 IST" duration-ms="1523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1850f2da]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:00:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T12:00:58 IST" duration-ms="38589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["to validate if user is taken to the property listings after providing the valid informations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the functionalities of NoBroker website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:00:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T12:01:16 IST" duration-ms="17942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["to validate if the user is able to register for nri carnival"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the functionalities of NoBroker website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:01:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T12:01:38 IST" duration-ms="22394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["The user can enter the details in the capital gain form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the functionalities of NoBroker website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:01:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T12:01:50 IST" duration-ms="11773" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user enters the personal information in the form displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the functionalities of NoBroker website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-builder-projects/capital-gain/>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-builder-projects/capital-gain/>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at CommercialStepDefination.CommercialStepDefination.click_the_submit_button(CommercialStepDefination.java:313)
+at ✽.click the submit button(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:01:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T12:02:04 IST" duration-ms="14024" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user is displayed the seth zuri properties"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the functionalities of NoBroker website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at CommercialStepDefination.CommercialStepDefination.the_user_is_taken_to_the_property_listed_pages(CommercialStepDefination.java:352)
+at ✽.the user is taken to the property listed pages(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:51)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CommercialRunner.Runner@17bffc17]" started-at="2024-04-18T12:02:04 IST" name="tearDownClass" finished-at="2024-04-18T12:02:05 IST" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CommercialRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

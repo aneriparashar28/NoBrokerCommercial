@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="104.891" tests="5" skipped="0" failures="2" errors="0">
+<testcase classname="To test the functionalities of NoBroker website" name="to validate if user is taken to the property listings after providing the valid informations" time="38.452">
+<system-out><![CDATA[
+Given the User should be logged in the NoBroker website.....................passed
+When user selects the commercial option.....................................passed
+And user enters all the required details in the given section...............passed
+Then the user is taken to the property listing page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test the functionalities of NoBroker website" name="to validate if the user is able to register for nri carnival - Example #1.1" time="17.922">
+<system-out><![CDATA[
+Given the User should be logged in the NoBroker website.....................passed
+When Click on the no broker logo............................................passed
+And scroll down to view the enquire now button..............................passed
+And select the enquire now button...........................................passed
+And click on the nri carnival...............................................passed
+And click on register now...................................................passed
+And User enter details with joey,joey123@gmail.com,8986475876...............passed
+And user selects the city...................................................passed
+And user selects the budget.................................................passed
+Then click on submit button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test the functionalities of NoBroker website" name="The user can enter the details in the capital gain form" time="22.378">
+<system-out><![CDATA[
+Given the User should be logged in the NoBroker website.....................passed
+When user Clicks on the NoBroker logo.......................................passed
+And user scrolls down to view the enquire now button........................passed
+And user selects the enquire now button.....................................passed
+And user clicks on capital gain option......................................passed
+And user enters the purchase price and sale price...........................passed
+And user selects parchase time, income slab and sale time from the drop down.passed
+And user clicks on the submit option........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test the functionalities of NoBroker website" name="user enters the personal information in the form displayed" time="11.768">
+<failure type="java.lang.AssertionError" message="expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-builder-projects/capital-gain/&gt;">
+<![CDATA[java.lang.AssertionError: expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-builder-projects/capital-gain/>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.click_the_submit_button(CommercialStepDefination.java:313)
+	at ✽.click the submit button(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:45)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the User should be logged in the NoBroker website.....................passed
+When user is taken to the next scenario through the privious one............passed
+And user enters the details in the form name, email and  mobile.............passed
+And click the submit button.................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="To test the functionalities of NoBroker website" name="user is displayed the seth zuri properties" time="14.02">
+<failure type="java.lang.AssertionError" message="expected:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3&gt; but was:&lt;https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/&gt;">
+<![CDATA[java.lang.AssertionError: expected:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3> but was:<https://www.nobroker.in/prophub/new-projects/sheth-zuri-3/>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at CommercialStepDefination.CommercialStepDefination.the_user_is_taken_to_the_property_listed_pages(CommercialStepDefination.java:352)
+	at ✽.the user is taken to the property listed pages(file:///C:/Users/APARASHA/Desktop/sprint2/Commercial/src/test/resources/Features/Commercial.feature:51)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the User should be logged in the NoBroker website.....................passed
+When user is directed to the url............................................passed
+And the user clicks on Seth Zuri option.....................................passed
+Then the user is taken to the property listed pages.........................failed
+]]></system-out>
+</testcase>
+</testsuite>
